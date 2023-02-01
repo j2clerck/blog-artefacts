@@ -1,0 +1,18 @@
+[package]
+name = "aws-image-archiver"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aws-config = "0.54.1"
+aws-sdk-s3 = "0.24.0"
+image = "0.24.5"
+
+lambda_runtime = "0.7"
+serde = "1.0.136"
+tokio = { version = "1", features = ["macros"] }
+tracing = { version = "0.1", features = ["log"] }
+tracing-subscriber = { version = "0.3", default-features = false, features = ["fmt"] }
+urlencoding = "2.1.2"
